@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Contact & Inquire — Brides Right Hand | Wedding & Event Planning</title>
+    <meta name="description"
+        content="Start a conversation with Christina Haydanek at Brides Right Hand. Tell us about your celebration, your vision, and explore thoughtful wedding planning, coordination, styling, and rentals.">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23FAF7F2'/%3E%3Ctext x='5' y='24' font-family='serif' font-size='25'%3EB%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=2.5">
+    <script src="app.js?v=2.5" defer></script>
+    <script src="motion.js?v=2.5" defer></script>
+    <script src="contact.js?v=2.5" defer></script>
+</head>
+
+<body class="page-contact">
+    <div class="reading-progress" aria-hidden="true"></div>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <!-- GLOBAL HEADER (Solid variant for inner pages) -->
+    <header id="header" class="header-solid">
+        <a class="wordmark" href="index.html#home">
+            <span class="header-logo-wrapper" aria-hidden="true">
+                <img class="header-logo header-logo-white" src="assets/brh-logo-white.png" alt="" width="1254" height="1254" decoding="async">
+                <img class="header-logo header-logo-gold" src="assets/brh-full-logo.png" alt="" width="826" height="786" decoding="async">
+            </span>
+            <span class="wordmark-text">BRIDES RIGHT HAND<span>WEDDING & EVENT PLANNING</span></span>
+        </a>
+        <nav aria-label="Main navigation">
+            <a href="index.html#home">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="index.html#rentals">Rentals</a>
+            <a href="contact.html" class="header-inquire" aria-current="page">Inquire</a>
+        </nav>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+            <span></span><span></span>
+        </button>
+    </header>
+
+    <!-- MOBILE NAVIGATION DIALOG -->
+    <dialog id="mobile-menu">
+        <button class="menu-close" aria-label="Close menu">Close ×</button>
+        <span class="eyebrow">BRIDES RIGHT HAND</span>
+        <nav aria-label="Mobile navigation">
+            <a href="index.html#home">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="index.html#rentals">Rentals</a>
+            <a href="contact.html" aria-current="page">Inquire</a>
+        </nav>
+        <img src="assets/optimized/photo-sweetheart-table-600w.webp"
+            srcset="assets/optimized/photo-sweetheart-table-600w.webp 600w, assets/optimized/photo-sweetheart-table-1200w.webp 1200w"
+            sizes="(max-width: 600px) 100vw, 400px"
+            alt="Candlelit wedding reception sweetheart table with draped backdrop and floral centerpiece"
+            loading="lazy" width="600" height="900">
+        <p>Your day. Your vision. Your right hand.</p>
+    </dialog>
+
+    <main id="main">
+        <!-- SECTION 01 — INQUIRY HERO (EDITORIAL MAGAZINE LAYOUT) -->
+        <section class="contact-hero section" id="inquiry-hero">
+            <div class="contact-hero-container">
+                <div class="contact-hero-header">
+                    <p class="eyebrow reveal-fade">YOUR CELEBRATION STARTS HERE</p>
+                    <h1 class="reveal-mask-lr">Tell Us About Your <em>Celebration.</em></h1>
+                </div>
+
+                <div class="contact-hero-editorial">
+                    <figure class="contact-hero-canvas reveal-fade" style="--reveal-delay: 140ms;">
+                        <img src="assets/optimized/hero-couple-replacement-1200w.webp"
+                            srcset="assets/optimized/hero-couple-replacement-600w.webp 600w, assets/optimized/hero-couple-replacement-1200w.webp 1200w, assets/optimized/hero-couple-replacement-2000w.webp 2000w"
+                            sizes="(max-width: 900px) 94vw, 1200px"
+                            alt="Bride and groom sharing an outdoor ceremony kiss beneath a white floral archway"
+                            fetchpriority="high" width="2000" height="1334">
+                        <figcaption class="hero-photo-credit">MASSACHUSETTS &amp; DESTINATION WEDDINGS · BRIDES RIGHT HAND</figcaption>
+                    </figure>
+
+                    <div class="contact-hero-panel reveal-slide-left" style="--reveal-delay: 240ms;">
+                        <span class="panel-eyebrow" aria-hidden="true">THE FIRST STEP</span>
+                        <p class="panel-copy">Every meaningful celebration begins with a conversation. Tell us a little about your plans, your vision, and where you are in the process. We’d love to learn what matters most to you.</p>
+                        <div class="panel-actions">
+                            <a class="button dark js-scroll-to-form" href="#inquiry-form">START YOUR INQUIRY</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 02 — BRAND PROMISE -->
+        <section class="contact-promise section" id="promise">
+            <div class="contact-promise-inner">
+                <div class="contact-promise-rule reveal-fade" aria-hidden="true"></div>
+                <h2 class="reveal-mask-tb">Your Day. Your Vision.<br><em>Your Right Hand.</em></h2>
+                <p class="reveal-fade" style="--reveal-delay: 180ms;">At Brides Right Hand, our goal is simple: to give you the freedom to be fully present on one of the most important days of your life. While you focus on making memories, we’ll focus on every detail.</p>
+            </div>
+        </section>
+
+        <!-- SECTION 03 — MAIN INQUIRY FORM -->
+        <section class="contact-form-section section" id="inquiry-form" aria-labelledby="form-heading">
+            <div class="contact-form-header">
+                <span class="eyebrow reveal-fade">01 / INQUIRY DETAILS</span>
+                <h2 id="form-heading" class="reveal-slide-right">Tell Us a Little More</h2>
+                <p class="reveal-fade" style="--reveal-delay: 120ms;">Share whatever you know so far. You don’t need to have every detail figured out.</p>
+            </div>
+
+            <div class="contact-form-wrapper reveal-scale-up" style="--reveal-delay: 160ms;">
+                <p class="form-required-notice"><span class="req-mark" aria-hidden="true">*</span> Indicates a required field</p>
+
+                <!-- ACCESSIBLE STATUS BANNER -->
+                <div id="form-status" class="form-status" role="region" aria-live="polite" aria-atomic="true" hidden></div>
+
+                <form id="brh-inquiry-form" class="inquiry-form" novalidate>
+                    <!-- Row 1: Names -->
+                    <div class="form-row reveal-fade">
+                        <div class="form-group">
+                            <label for="fullName" class="form-label">Your Name <span class="req-mark" aria-hidden="true">*</span></label>
+                            <input type="text" id="fullName" name="fullName" class="form-control" autocomplete="name" required aria-required="true" aria-describedby="fullName-error">
+                            <span id="fullName-error" class="form-error-msg" role="alert">Please provide your name.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="partnerName" class="form-label">Partner’s Name <span class="optional-tag">(Optional)</span></label>
+                            <input type="text" id="partnerName" name="partnerName" class="form-control" autocomplete="off">
+                        </div>
+                    </div>
+
+                    <!-- Row 2: Contact Info -->
+                    <div class="form-row reveal-fade" style="--reveal-delay: 60ms;">
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address <span class="req-mark" aria-hidden="true">*</span></label>
+                            <input type="email" id="email" name="email" class="form-control" autocomplete="email" required aria-required="true" aria-describedby="email-error">
+                            <span id="email-error" class="form-error-msg" role="alert">Please enter a valid email address.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number <span class="optional-tag">(Optional)</span></label>
+                            <input type="tel" id="phone" name="phone" class="form-control" autocomplete="tel">
+                        </div>
+                    </div>
+
+                    <!-- Row 3: Event Type & Date -->
+                    <div class="form-row reveal-fade" style="--reveal-delay: 100ms;">
+                        <div class="form-group">
+                            <label for="eventType" class="form-label">Event Type <span class="req-mark" aria-hidden="true">*</span></label>
+                            <div class="select-wrapper">
+                                <select id="eventType" name="eventType" class="form-control select-control" required aria-required="true" aria-describedby="eventType-error">
+                                    <option value="" disabled selected>Select event type...</option>
+                                    <option value="Wedding">Wedding</option>
+                                    <option value="Engagement Celebration">Engagement Celebration</option>
+                                    <option value="Elopement / Intimate Wedding">Elopement / Intimate Wedding</option>
+                                    <option value="Other Event / Celebration">Other Event / Celebration</option>
+                                </select>
+                            </div>
+                            <span id="eventType-error" class="form-error-msg" role="alert">Please select an event type.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="eventDate" class="form-label">Wedding / Event Date <span class="optional-tag">(Optional)</span></label>
+                            <input type="date" id="eventDate" name="eventDate" class="form-control">
+                            <label class="checkbox-sublabel" for="dateUndecided">
+                                <input type="checkbox" id="dateUndecided" name="dateUndecided" value="true">
+                                <span>We don’t have a confirmed date yet</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Row 4: Date Flexibility & Guest Count -->
+                    <div class="form-row reveal-fade" style="--reveal-delay: 140ms;">
+                        <div class="form-group">
+                            <label for="dateFlexibility" class="form-label">Date Flexibility <span class="optional-tag">(Optional)</span></label>
+                            <div class="select-wrapper">
+                                <select id="dateFlexibility" name="dateFlexibility" class="form-control select-control">
+                                    <option value="" selected>Select flexibility...</option>
+                                    <option value="Date confirmed">Date confirmed</option>
+                                    <option value="Date flexible">Date flexible</option>
+                                    <option value="Still deciding">Still deciding</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guestCount" class="form-label">Estimated Guest Count <span class="optional-tag">(Optional)</span></label>
+                            <div class="select-wrapper">
+                                <select id="guestCount" name="guestCount" class="form-control select-control">
+                                    <option value="" selected>Select estimated count...</option>
+                                    <option value="Intimate (Under 50 guests)">Intimate (Under 50 guests)</option>
+                                    <option value="50 – 100 guests">50 – 100 guests</option>
+                                    <option value="100 – 175 guests">100 – 175 guests</option>
+                                    <option value="175 – 250 guests">175 – 250 guests</option>
+                                    <option value="250+ guests">250+ guests</option>
+                                    <option value="Still deciding / Undecided">Still deciding / Undecided</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 5: Location / Venue -->
+                    <div class="form-row reveal-fade" style="--reveal-delay: 180ms;">
+                        <div class="form-group full-width">
+                            <label for="location" class="form-label">Event Location or Venue <span class="optional-tag">(Optional if undecided)</span></label>
+                            <input type="text" id="location" name="location" class="form-control" placeholder="e.g. South Shore, Boston, Cape Cod, Newport, or destination">
+                        </div>
+                    </div>
+
+                    <!-- Row 6: Services of Interest (Multi-select Checkbox Group) -->
+                    <fieldset class="form-group full-width services-fieldset reveal-fade" style="--reveal-delay: 220ms;" aria-describedby="services-error services-hint">
+                        <legend class="form-label">Services of Interest <span class="req-mark" aria-hidden="true">*</span></legend>
+                        <p id="services-hint" class="fieldset-hint">Please select all that apply to your celebration:</p>
+                        <div class="services-checkbox-grid">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="services" value="Day Of Coordination">
+                                <span class="checkbox-indicator" aria-hidden="true"></span>
+                                <span class="checkbox-text">Day Of Coordination</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="services" value="Month Of Coordination">
+                                <span class="checkbox-indicator" aria-hidden="true"></span>
+                                <span class="checkbox-text">Month Of Coordination</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="services" value="Partial Planning">
+                                <span class="checkbox-indicator" aria-hidden="true"></span>
+                                <span class="checkbox-text">Partial Planning</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="services" value="Full Planning Experience">
+                                <span class="checkbox-indicator" aria-hidden="true"></span>
+                                <span class="checkbox-text">Full Planning Experience</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="services" value="The Bride’s Personal Assistant Experience">
+                                <span class="checkbox-indicator" aria-hidden="true"></span>
+                                <span class="checkbox-text">Personal Assistant Experience <small>(Signature Service)</small></span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="services" value="Design &amp; Styling">
+                                <span class="checkbox-indicator" aria-hidden="true"></span>
+                                <span class="checkbox-text">Design &amp; Styling</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="services" value="Rental Collection">
+                                <span class="checkbox-indicator" aria-hidden="true"></span>
+                                <span class="checkbox-text">Rental Collection</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="services" value="Other / Not sure yet">
+                                <span class="checkbox-indicator" aria-hidden="true"></span>
+                                <span class="checkbox-text">Other / Not sure yet</span>
+                            </label>
+                        </div>
+                        <span id="services-error" class="form-error-msg" role="alert">Please select at least one service of interest.</span>
+                    </fieldset>
+
+                    <!-- Row 7: Vision / Tell Us More -->
+                    <div class="form-group full-width reveal-fade" style="--reveal-delay: 260ms;">
+                        <label for="vision" class="form-label">Tell Us About Your Vision <span class="req-mark" aria-hidden="true">*</span></label>
+                        <textarea id="vision" name="vision" class="form-control textarea-control" rows="5" required aria-required="true" aria-describedby="vision-error" placeholder="Share whatever feels important to you: your celebration aesthetic, what matters most to you and your partner, the kind of support you're hoping for, or any questions you have..."></textarea>
+                        <span id="vision-error" class="form-error-msg" role="alert">Please share a little about your celebration vision.</span>
+                    </div>
+
+                    <!-- Privacy & Submission Note -->
+                    <div class="form-privacy-note reveal-fade" style="--reveal-delay: 300ms;">
+                        <p>We respect your privacy. The details you submit will be used solely to respond to your inquiry and discuss your celebration with Christina.</p>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-submit-wrapper reveal-fade" style="--reveal-delay: 340ms;">
+                        <button type="submit" id="submit-btn" class="button dark form-submit-btn">
+                            <span class="btn-text">SUBMIT INQUIRY</span>
+                            <span class="btn-spinner" aria-hidden="true" hidden></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- SECTION 04 — WHAT HAPPENS NEXT? -->
+        <section class="contact-next section" id="next-steps" aria-labelledby="next-heading">
+            <div class="contact-next-header">
+                <span class="eyebrow reveal-fade">02 / WHAT HAPPENS NEXT</span>
+                <h2 id="next-heading" class="reveal-mask-lr">A Conversation, Not a Commitment</h2>
+                <p class="reveal-fade" style="--reveal-delay: 140ms;">Your inquiry is the first step toward a conversation about your celebration and the support you’re looking for.</p>
+            </div>
+
+            <div class="contact-steps-grid">
+                <article class="contact-step-card reveal-slide-left">
+                    <span class="contact-step-num">01</span>
+                    <h3>Share Your Vision</h3>
+                    <p>Tell us about your plans, priorities, and the kind of support you need. We review every note with care and attention.</p>
+                </article>
+
+                <article class="contact-step-card reveal-fade" style="--reveal-delay: 160ms;">
+                    <span class="contact-step-num">02</span>
+                    <h3>Connect With Christina</h3>
+                    <p>Start a conversation about your celebration and what matters most to you. We’ll discuss ideas and answer your initial questions.</p>
+                </article>
+
+                <article class="contact-step-card reveal-slide-right" style="--reveal-delay: 240ms;">
+                    <span class="contact-step-num">03</span>
+                    <h3>Explore Your Options</h3>
+                    <p>Discuss the services and support that may be the right fit for your event, ensuring a calm, tailored plan built around you.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECTION 05 — DIRECT CONTACT DETAILS -->
+        <section class="contact-direct section" id="direct-contact" aria-labelledby="direct-heading">
+            <div class="contact-direct-inner">
+                <span class="eyebrow reveal-fade">03 / DIRECT INQUIRIES</span>
+                <h2 id="direct-heading" class="reveal-fade" style="--reveal-delay: 100ms;">Prefer to Reach Out Directly?</h2>
+                <div class="contact-direct-grid">
+                    <div class="contact-direct-item reveal-slide-left" style="--reveal-delay: 140ms;">
+                        <span class="eyebrow">EMAIL DIRECTLY</span>
+                        <a href="mailto:bridesrighthand94@gmail.com">bridesrighthand94@gmail.com</a>
+                    </div>
+                    <div class="contact-direct-item reveal-slide-left" style="--reveal-delay: 200ms;">
+                        <span class="eyebrow">BY PHONE</span>
+                        <a href="tel:+16179014075">(617) 901-4075</a>
+                    </div>
+                    <div class="contact-direct-item reveal-fade" style="--reveal-delay: 260ms;">
+                        <span class="eyebrow">INSTAGRAM</span>
+                        <a href="https://www.instagram.com/thebridesright_hand/" target="_blank" rel="noopener">@thebridesright_hand</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 06 — CLOSING INVITATION -->
+        <section class="contact-closing section" id="closing-invitation" aria-labelledby="closing-heading">
+            <div class="contact-closing-inner">
+                <span class="eyebrow reveal-fade">LET’S BEGIN</span>
+                <h2 id="closing-heading" class="reveal-blur-focus">We’d Love to Hear<br><em>Your Vision.</em></h2>
+                <p class="reveal-fade" style="--reveal-delay: 120ms;">Whether you have every detail in place or are just beginning to imagine your celebration, we welcome you to start a conversation.</p>
+                <div class="contact-closing-action reveal-scale-up" style="--reveal-delay: 200ms;">
+                    <a class="button dark js-scroll-to-form" href="#inquiry-form">START YOUR INQUIRY</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- GLOBAL FOOTER -->
+    <footer>
+        <div class="footer-top">
+            <a class="wordmark" href="index.html#home">
+                <img class="footer-logo" src="assets/brh-full-logo.png" alt="Bride’s Right Hand logo" width="826" height="786">
+                <span class="wordmark-text">BRIDES RIGHT HAND<span>WEDDING & EVENT PLANNING</span></span>
+            </a>
+            <div>
+                <a href="mailto:bridesrighthand94@gmail.com">bridesrighthand94@gmail.com</a>
+                <a href="tel:+16179014075">(617) 901-4075</a>
+            </div>
+            <div>
+                <span>Massachusetts & beyond</span>
+                <p>South Shore · Greater Boston · Cape Cod<br>Rhode Island · Southern New Hampshire<br>Destination & international weddings</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span id="year">2026</span> BRIDES RIGHT HAND</span>
+            <span>Your day. Your vision. Your right hand.</span>
+            <a href="#inquiry-hero">BACK TO TOP</a>
+        </div>
+    </footer>
+</body>
+
+</html>
