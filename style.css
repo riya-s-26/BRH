@@ -419,6 +419,7 @@ footer .wordmark-text > span {
 body.page-about #header,
 body.page-services #header,
 body.page-contact #header,
+body.page-gallery #header,
 header.header-solid {
   background: rgba(250, 247, 242, 0.96);
   color: var(--charcoal);
@@ -428,24 +429,28 @@ header.header-solid {
 }
 body.page-about #header .header-logo-white,
 body.page-contact #header .header-logo-white,
+body.page-gallery #header .header-logo-white,
 header.header-solid .header-logo-white {
   opacity: 0;
   visibility: hidden;
 }
 body.page-about #header .header-logo-gold,
 body.page-contact #header .header-logo-gold,
+body.page-gallery #header .header-logo-gold,
 header.header-solid .header-logo-gold {
   opacity: 1;
   visibility: visible;
 }
 body.page-about #header .header-inquire,
 body.page-contact #header .header-inquire,
+body.page-gallery #header .header-inquire,
 header.header-solid .header-inquire {
   border-color: var(--taupe);
   color: var(--charcoal);
 }
 body.page-about #header .header-inquire:hover,
 body.page-contact #header .header-inquire:hover,
+body.page-gallery #header .header-inquire:hover,
 header.header-solid .header-inquire:hover {
   background: var(--ink);
   color: var(--pure-white);

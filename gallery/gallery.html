@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Gallery — Brides Right Hand | Wedding & Event Planning</title>
+    <meta name="description"
+        content="Explore our wedding portfolio at Brides Right Hand — venues, details, floral & décor, celebrations, couples, and behind-the-scenes moments thoughtfully captured in Massachusetts and beyond.">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23FAF7F2'/%3E%3Ctext x='5' y='24' font-family='serif' font-size='25'%3EB%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="../app.js" defer></script>
+    <script src="../motion.js" defer></script>
+    <script src="js/gallery.js" defer></script>
+</head>
+
+<body class="page-gallery">
+    <div class="reading-progress" aria-hidden="true"></div>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <!-- GLOBAL HEADER (Solid variant for inner pages) -->
+    <header id="header" class="header-solid">
+        <a class="wordmark" href="../index.html#home">
+            <span class="header-logo-wrapper" aria-hidden="true">
+                <img class="header-logo header-logo-white" src="../assets/brh-logo-white.png" alt="" width="1254" height="1254" decoding="async">
+                <img class="header-logo header-logo-gold" src="../assets/brh-full-logo.png" alt="" width="826" height="786" decoding="async">
+            </span>
+            <span class="wordmark-text">BRIDES RIGHT HAND<span>WEDDING & EVENT PLANNING</span></span>
+        </a>
+        <nav aria-label="Main navigation">
+            <a href="../index.html#home">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../services.html">Services</a>
+            <a href="gallery.html" aria-current="page">Gallery</a>
+            <a href="../index.html#rentals">Rentals</a>
+            <a href="../contact.html" class="header-inquire">Inquire</a>
+        </nav>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+            <span></span><span></span>
+        </button>
+    </header>
+
+    <!-- MOBILE NAVIGATION DIALOG -->
+    <dialog id="mobile-menu">
+        <button class="menu-close" aria-label="Close menu">Close ×</button>
+        <span class="eyebrow">BRIDES RIGHT HAND</span>
+        <nav aria-label="Mobile navigation">
+            <a href="../index.html#home">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../services.html">Services</a>
+            <a href="gallery.html" aria-current="page">Gallery</a>
+            <a href="../index.html#rentals">Rentals</a>
+            <a href="../contact.html">Inquire</a>
+        </nav>
+        <img src="../assets/optimized/photo-sweetheart-table-600w.webp"
+            srcset="../assets/optimized/photo-sweetheart-table-600w.webp 600w, ../assets/optimized/photo-sweetheart-table-1200w.webp 1200w"
+            sizes="(max-width: 600px) 100vw, 400px"
+            alt="Candlelit wedding reception sweetheart table with draped backdrop and floral centerpiece"
+            loading="lazy" width="600" height="900">
+        <p>Your day. Your vision. Your right hand.</p>
+    </dialog>
+
+    <main id="main">
+        <section class="intro">
+            <p class="eyebrow">THE ART OF CELEBRATION</p>
+            <h1>Moments to <em>remember.</em></h1>
+            <p class="intro-copy">A collection of love, laughter and the little details that make every celebration unforgettable.</p>
+            <span class="intro-rule" aria-hidden="true"></span>
+        </section>
+
+        <!-- GALLERY CATEGORY INDEX -->
+        <section class="category-index">
+            <p class="eyebrow">EXPLORE OUR COLLECTION</p>
+            <div class="category-links">
+                <a href="#venues">01. The Venues</a>
+                <a href="#details">02. The Details</a>
+                <a href="#floral">03. Floral &amp; Décor</a>
+                <a href="#celebrations">04. The Celebrations</a>
+                <a href="#couples">05. The Couples</a>
+                <a href="#behind-scenes">06. Behind the Scenes</a>
+            </div>
+        </section>
+
+        <!-- 01. THE VENUES -->
+        <section class="gallery-section category-section" id="venues">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">01 / OUR COLLECTION</p>
+                    <h2>The <em>Venues</em></h2>
+                    <p class="category-description">
+                        Beautiful spaces where unforgettable celebrations begin.
+                    </p>
+                </div>
+            </div>
+            <div class="gallery-grid" id="venuesGrid"></div>
+        </section>
+
+        <!-- 02. THE DETAILS -->
+        <section class="gallery-section category-section" id="details">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">02 / OUR COLLECTION</p>
+                    <h2>The <em>Details</em></h2>
+                    <p class="category-description">
+                        Thoughtful touches that make every celebration special.
+                    </p>
+                </div>
+            </div>
+            <div class="gallery-grid" id="detailsGrid"></div>
+        </section>
+
+        <!-- 03. FLORAL & DÉCOR -->
+        <section class="gallery-section category-section" id="floral">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">03 / OUR COLLECTION</p>
+                    <h2>Floral &amp; <em>Décor</em></h2>
+                    <p class="category-description">
+                        Beautiful floral arrangements and carefully styled spaces.
+                    </p>
+                </div>
+            </div>
+            <div class="gallery-grid" id="floralGrid"></div>
+        </section>
+
+        <!-- 04. THE CELEBRATIONS -->
+        <section class="gallery-section category-section" id="celebrations">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">04 / OUR COLLECTION</p>
+                    <h2>The <em>Celebrations</em></h2>
+                    <p class="category-description">
+                        The ceremonies, gatherings and moments worth celebrating.
+                    </p>
+                </div>
+            </div>
+            <div class="gallery-grid" id="celebrationsGrid"></div>
+        </section>
+
+        <!-- 05. THE COUPLES -->
+        <section class="gallery-section category-section" id="couples">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">05 / OUR COLLECTION</p>
+                    <h2>The <em>Couples</em></h2>
+                    <p class="category-description">
+                        Celebrating the people and stories at the heart of every wedding.
+                    </p>
+                </div>
+            </div>
+            <div class="gallery-grid" id="couplesGrid"></div>
+        </section>
+
+        <!-- 06. BEHIND THE SCENES -->
+        <section class="gallery-section category-section" id="behind-scenes">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">06 / OUR COLLECTION</p>
+                    <h2>Behind the <em>Scenes</em></h2>
+                    <p class="category-description">
+                        The planning, preparation and people bringing it all together.
+                    </p>
+                </div>
+            </div>
+            <div class="gallery-grid" id="behindScenesGrid"></div>
+        </section>
+
+        <section class="closing-note">
+            <p class="eyebrow">EVERY DETAIL TELLS A STORY</p>
+            <h2>Made of moments.<br><em>Remembered forever.</em></h2>
+        </section>
+    </main>
+
+    <!-- GLOBAL FOOTER -->
+    <footer>
+        <div class="footer-top">
+            <a class="wordmark" href="../index.html#home">
+                <img class="footer-logo" src="../assets/brh-full-logo.png" alt="Bride’s Right Hand logo" width="826" height="786">
+                <span class="wordmark-text">BRIDES RIGHT HAND<span>WEDDING & EVENT PLANNING</span></span>
+            </a>
+            <div>
+                <a href="mailto:bridesrighthand94@gmail.com">bridesrighthand94@gmail.com</a>
+                <a href="tel:+16179014075">(617) 901-4075</a>
+            </div>
+            <div>
+                <span>Massachusetts & beyond</span>
+                <p>South Shore · Greater Boston · Cape Cod<br>Rhode Island · Southern New Hampshire<br>Destination & international weddings</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span id="year">2026</span> BRIDES RIGHT HAND</span>
+            <span>Your day. Your vision. Your right hand.</span>
+            <a href="#main">BACK TO TOP</a>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image gallery lightbox">
+        <button class="lightbox-close" aria-label="Close image">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous image">&#10094;</button>
+        <img class="lightbox-image" src="" alt="Selected wedding photograph">
+        <button class="lightbox-next" aria-label="Next image">&#10095;</button>
+        <div class="lightbox-counter" id="lightboxCounter"></div>
+    </div>
+
+    <div class="cursor" aria-hidden="true">VIEW</div>
+</body>
+
+</html>
