@@ -1,18 +1,8 @@
 /* =================================
-   BRIDE'S RIGHT HAND — GALLERY
+   BRIDE'S RIGHT HAND | GALLERY
 ================================= */
 
 const categories = [
-  {
-    id: "venuesGrid",
-    name: "The Venues",
-    images: [
-      "images/venue-01.jpg",
-      "images/venue-02.jpg",
-      "images/venue-03.jpg",
-      "images/venue-04.jpg"
-    ]
-  },
   {
     id: "detailsGrid",
     name: "The Details",

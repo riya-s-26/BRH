@@ -1,5 +1,5 @@
 /**
- * BRIDES RIGHT HAND — Contact & Inquire Page Logic
+ * BRIDES RIGHT HAND | Contact & Inquire Page Logic
  * Handles client-side validation, accessibility, smooth anchor navigation,
  * and reliable form submission state lifecycle management.
  */
@@ -256,7 +256,7 @@
 
     // Generate pre-filled mailto URL with inquiry details
     function generateMailtoUrl(formData) {
-        const subject = encodeURIComponent(`[Wedding Inquiry] ${formData.fullName} — Brides Right Hand`);
+        const subject = encodeURIComponent(`[Wedding Inquiry] ${formData.fullName} | Brides Right Hand`);
         const bodyLines = [
             `INQUIRY FOR BRIDES RIGHT HAND:`,
             `-------------------------------------------`,

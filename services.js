@@ -1,4 +1,4 @@
-/* Brides Right Hand — Services Page Interactive Features
+/* Brides Right Hand | Services Page Interactive Features
    Handles accessible image slideshow, touch gestures, keyboard controls, and timeline progress. */
 (() => {
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
