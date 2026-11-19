@@ -32,7 +32,7 @@
     <main id="main">
         <section class="hero-shell" id="home">
             <div class="hero">
-                <div class="hero-slides"><img class="hero-photo active" src="assets/optimized/photo-mustang-kiss-1200w.webp" srcset="assets/optimized/photo-mustang-kiss-600w.webp 600w, assets/optimized/photo-mustang-kiss-1200w.webp 1200w, assets/optimized/photo-mustang-kiss-2000w.webp 2000w" sizes="100vw" alt="Bride and groom sharing an intimate kiss against a vintage Mustang convertible on their wedding day" fetchpriority="high" width="2000" height="1333"><img class="hero-photo" src="assets/optimized/img-0040-1200w.webp" srcset="assets/optimized/img-0040-600w.webp 600w, assets/optimized/img-0040-1200w.webp 1200w, assets/optimized/img-0040-2000w.webp 2000w" sizes="100vw" alt="Joyous outdoor wedding ceremony celebration with newlyweds kissing beneath a lush floral arch as guests applaud" loading="lazy" width="2000" height="1333"><img class="hero-photo" src="assets/optimized/photo-first-dance-night-1200w.webp" srcset="assets/optimized/photo-first-dance-night-600w.webp 600w, assets/optimized/photo-first-dance-night-1200w.webp 1200w, assets/optimized/photo-first-dance-night-2000w.webp 2000w" sizes="100vw" alt="Romantic evening reception with newlyweds sharing their first dance under glowing festoon lights" loading="lazy" width="2000" height="3000">
+                <div class="hero-slides"><img class="hero-photo active" src="assets/optimized/img-0040-1200w.webp" srcset="assets/optimized/img-0040-600w.webp 600w, assets/optimized/img-0040-1200w.webp 1200w, assets/optimized/img-0040-2000w.webp 2000w" sizes="100vw" alt="Joyous outdoor wedding ceremony celebration with newlyweds kissing beneath a lush floral arch as guests applaud" fetchpriority="high" width="2000" height="1333"><img class="hero-photo" src="assets/optimized/photo-mustang-kiss-1200w.webp" srcset="assets/optimized/photo-mustang-kiss-600w.webp 600w, assets/optimized/photo-mustang-kiss-1200w.webp 1200w, assets/optimized/photo-mustang-kiss-2000w.webp 2000w" sizes="100vw" alt="Bride and groom sharing an intimate kiss against a vintage Mustang convertible on their wedding day" loading="lazy" width="2000" height="1333"><img class="hero-photo" src="assets/optimized/photo-first-dance-night-1200w.webp" srcset="assets/optimized/photo-first-dance-night-600w.webp 600w, assets/optimized/photo-first-dance-night-1200w.webp 1200w, assets/optimized/photo-first-dance-night-2000w.webp 2000w" sizes="100vw" alt="Romantic evening reception with newlyweds sharing their first dance under glowing festoon lights" loading="lazy" width="2000" height="3000">
                 </div>
                 <div class="hero-shade"></div>
                 <div class="hero-copy">
@@ -41,11 +41,11 @@
                                 vision.</em></span><span class="line"><span>Your right hand.</span></span></h1><a
                         class="button light entrance" href="#inquire">START YOUR INQUIRY</a>
                 </div>
-                <div class="hero-slide-controls" aria-label="Hero photographs"><button class="selected"
-                        aria-label="Show wedding couple photograph" aria-pressed="true"
-                        data-slide="0">01</button><button aria-label="Show ceremony celebration photograph" aria-pressed="false"
-                        data-slide="1">02</button><button aria-label="Show evening reception photograph" aria-pressed="false"
-                        data-slide="2">03</button><button id="hero-pause"
+                <div class="hero-slide-controls" aria-label="Hero photographs"><button class="hero-control selected"
+                        aria-label="Show ceremony celebration photograph" aria-pressed="true"
+                        data-slide="0"><span class="sr-only">Slide 1</span></button><button class="hero-control" aria-label="Show wedding couple photograph" aria-pressed="false"
+                        data-slide="1"><span class="sr-only">Slide 2</span></button><button class="hero-control" aria-label="Show evening reception photograph" aria-pressed="false"
+                        data-slide="2"><span class="sr-only">Slide 3</span></button><button id="hero-pause"
                         aria-label="Pause photograph slideshow">PAUSE</button></div>
                 <div class="hero-bottom"><span>THOUGHTFULLY PLANNED.<br>FULLY PRESENT.</span><a href="#about">SCROLL TO
                         DISCOVER <i></i></a><span>COORDINATION · PLANNING<br>STYLING · RENTALS</span></div>
@@ -84,11 +84,10 @@
                 </p>
             </div>
             <div class="services-grid">
-                <div class="service-visual image-reveal"><img id="service-image" src="assets/optimized/img-0045-1200w.webp" alt="Day of coordination mirrored welcome sign details" loading="lazy" width="1200" height="1800"><span
-                        id="service-index">01 / 04</span></div>
+                <div class="service-visual image-reveal"><img id="service-image" src="assets/optimized/img-0045-1200w.webp" alt="Day of coordination mirrored welcome sign details" loading="lazy" width="1200" height="1800"></div>
                 <div class="service-list">
-                    <nav class="service-jumps" aria-label="Service chapters"><a href="#service-1" class="active" aria-current="step">01</a><a
-                            href="#service-2">02</a><a href="#service-3">03</a><a href="#service-4">04</a></nav>
+                    <nav class="service-jumps" aria-label="Service chapters"><a href="#service-1" class="active" aria-current="step">Day Of</a><a
+                            href="#service-2">Month Of</a><a href="#service-3">Partial Planning</a><a href="#service-4">Full Planning</a></nav>
                     <article class="service-chapter active" id="service-1"
                         data-photo="optimized/img-0045-1200w.webp">
                         <div class="service-title">
@@ -197,13 +196,73 @@
                 <div class="quote-progress"><span></span></div>
             </div>
         </section>
+        <section class="faq-section section" id="faq">
+            <div class="section-top reveal">
+                <span class="eyebrow">FREQUENTLY ASKED QUESTIONS</span>
+                <span class="small-serif">Clarity for your journey ahead.</span>
+            </div>
+            <div class="faq-layout">
+                <div class="faq-header reveal-slide-left">
+                    <h2>Everything you need<br>to know, <em>answered.</em></h2>
+                    <p>Have questions about how we partner with our couples? Here are thoughtful answers to the questions we receive most often.</p>
+                    <a class="button" href="#inquire">HAVE ANOTHER QUESTION?</a>
+                </div>
+                <div class="faq-accordion reveal-fade" style="--reveal-delay: 150ms;">
+                    <details class="faq-item" open>
+                        <summary class="faq-question">
+                            <span>What is the difference between Day of Coordination and Full Planning?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Day of Coordination begins several weeks prior to your wedding date, where we review all contracts, finalize a master minute-by-minute timeline, align with your vendor team, and orchestrate the rehearsal and entire wedding day. Full Planning provides comprehensive guidance from the early stages of your engagement, including vendor curation, venue evaluation, budget management, bespoke aesthetic design, and complete execution.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>Where does Brides Right Hand plan and coordinate weddings?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>We are based in Massachusetts and proudly serve couples throughout Greater Boston, Cape Cod, the Islands, Rhode Island, and across New England. We also welcome select destination wedding celebrations.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>Do you assist with venue sourcing and selection?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Yes. While Brides Right Hand does not own a venue, we act as your trusted planning advisor to help you discover, evaluate, and tour venues that align seamlessly with your guest count, aesthetic vision, and logistical requirements.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>When should we book our wedding planner or coordinator?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>We recommend booking 9 to 18 months in advance for Full or Partial Planning to secure premier creative partners. For Month of or Day of Coordination, booking 4 to 9 months ahead is ideal. However, we always welcome inquiries to see if your date remains available on our calendar.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>How do we receive a personalized proposal?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Because every couple and wedding celebration is unique, we tailor our service proposals to your specific needs, location, and guest count. Please submit an inquiry through our contact form, and we will arrange a complimentary initial consultation to discuss your vision.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
         <section class="story section" id="gallery">
             <div class="story-gallery">
                 <div class="story-title reveal"><span class="eyebrow">THE DETAILS MATTER. THE MEMORIES MATTER MORE.</span>
                     <h2>Your only job on wedding day<br>is to <em>enjoy it.</em></h2>
                 </div>
                 <div class="story-collage"><span class="collage-word" aria-hidden="true">Memories.</span>
-                    <figure class="image-reveal"><img src="wedding stock pics/pexels-pavel-danilyuk-8815291.jpg" alt="Bride and groom exchanging vows during an elegant wedding ceremony" loading="lazy" width="5473" height="3654"></figure>
+                    <figure class="image-reveal"><img src="assets/optimized/photo-stairs-couple-portrait-1200w.webp" alt="Romantic portrait of bride and groom in joyful embrace on wedding day" loading="lazy" width="1200" height="1799"></figure>
                     <figure class="image-reveal"><img src="assets/optimized/photo-cathedral-veil-romance-1200w.webp" srcset="assets/optimized/photo-cathedral-veil-romance-600w.webp 600w, assets/optimized/photo-cathedral-veil-romance-1200w.webp 1200w" sizes="(max-width: 800px) 90vw, 750px" alt="Romantic portrait of bride and groom wrapped together in an embroidered cathedral lace veil" loading="lazy" width="1200" height="1799"></figure>
                     <figure class="image-reveal"><img src="assets/optimized/img-0095-1200w.webp" srcset="assets/optimized/img-0095-600w.webp 600w, assets/optimized/img-0095-1200w.webp 1200w" sizes="(max-width: 800px) 85vw, 600px" alt="Three-tier wedding cake decorated with fresh roses and gold Better Together signage" loading="lazy" width="1200" height="1796"></figure>
                 </div>
@@ -221,7 +280,7 @@
                         <figure><img src="assets/optimized/img-0045-600w.webp" alt="Mirrored wedding welcome sign on outdoor patio" loading="lazy" width="600" height="900"></figure>
                         <figure><img src="assets/optimized/photo-mustang-kiss-600w.webp" alt="Newlyweds kissing against vintage Mustang convertible" loading="lazy" width="600" height="400"></figure>
                         <figure><img src="assets/optimized/img-0093-600w.webp" alt="Curated reception tablescape with towering floral centerpiece" loading="lazy" width="600" height="898"></figure>
-                        <figure><img src="assets/optimized/photo-church-dip-kiss-600w.webp" alt="Joyous dip kiss celebration outside church doors" loading="lazy" width="600" height="900"></figure>
+                        <figure><img src="assets/optimized/img-0047-600w.webp" alt="Curated wedding bar styling with tapered candles and cocktail signage" loading="lazy" width="600" height="900"></figure>
                         <figure><img src="assets/optimized/img-0044-600w.webp" alt="Vibrant ceremony floral arch with custom mirror monogram" loading="lazy" width="600" height="900"></figure>
                         <figure><img src="assets/optimized/img-0095-600w.webp" alt="Three-tier wedding cake with fresh roses and gold topper" loading="lazy" width="600" height="898"></figure>
                         <figure><img src="assets/optimized/photo-sweetheart-table-600w.webp" alt="Candlelit sweetheart table with draped ivory backdrop" loading="lazy" width="600" height="900"></figure>
@@ -231,7 +290,7 @@
                         <figure aria-hidden="true"><img src="assets/optimized/img-0045-600w.webp" alt="" loading="lazy" width="600" height="900"></figure>
                         <figure aria-hidden="true"><img src="assets/optimized/photo-mustang-kiss-600w.webp" alt="" loading="lazy" width="600" height="400"></figure>
                         <figure aria-hidden="true"><img src="assets/optimized/img-0093-600w.webp" alt="" loading="lazy" width="600" height="898"></figure>
-                        <figure aria-hidden="true"><img src="assets/optimized/photo-church-dip-kiss-600w.webp" alt="" loading="lazy" width="600" height="900"></figure>
+                        <figure aria-hidden="true"><img src="assets/optimized/img-0047-600w.webp" alt="" loading="lazy" width="600" height="900"></figure>
                         <figure aria-hidden="true"><img src="assets/optimized/img-0044-600w.webp" alt="" loading="lazy" width="600" height="900"></figure>
                         <figure aria-hidden="true"><img src="assets/optimized/img-0095-600w.webp" alt="" loading="lazy" width="600" height="898"></figure>
                         <figure aria-hidden="true"><img src="assets/optimized/photo-sweetheart-table-600w.webp" alt="" loading="lazy" width="600" height="900"></figure>
@@ -241,8 +300,8 @@
             </div>
         </section>
         <section class="inquiry section" id="inquire">
-            <div class="inquiry-photo left" aria-hidden="true"><img src="assets/optimized/photo-church-dip-kiss-600w.webp" alt="Bride and groom celebrating with an outdoor dip kiss" loading="lazy" width="600" height="900"></div>
-            <div class="inquiry-photo right" aria-hidden="true"><img src="assets/optimized/photo-door-peonies-handle-600w.webp" alt="Cathedral door adorned with blooming white peonies" loading="lazy" width="600" height="900"></div><span class="eyebrow reveal">YOUR NEXT CHAPTER BEGINS HERE</span>
+            <div class="inquiry-photo left" aria-hidden="true"><img src="assets/optimized/photo-stairs-couple-portrait-600w.webp" alt="Bride and groom portrait in romantic embrace" loading="lazy" width="600" height="900"></div>
+            <div class="inquiry-photo right" aria-hidden="true"><img src="assets/optimized/img-0041-600w.webp" alt="Ceremony floral arch styling inspiration" loading="lazy" width="600" height="900"></div><span class="eyebrow reveal">YOUR NEXT CHAPTER BEGINS HERE</span>
             <h2 class="reveal">Let’s create<br>something<br><em>unforgettable.</em></h2>
             <p class="reveal">Your day. Your vision. Your right hand.</p>
             <div class="inquiry-actions reveal"><a class="button dark"
